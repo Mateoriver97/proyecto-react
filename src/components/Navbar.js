@@ -4,17 +4,27 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function BarraNav() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">MB audio</Navbar.Brand>
+        <Navbar.Brand href="#home">
+          <img 
+          src={require('C:/Users/Mateo/Desktop/proyecto-react-sciutto/src/assets/logo.png')}
+          width="60"
+          height="45"
+          className="d-inline-block align-top"
+          alt="logo"
+          />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features">Ofertas</Nav.Link>
-            <Nav.Link href="#pricing">Contacto</Nav.Link>
+            <Nav.Link href="#ofertasDeLaSemana">Ofertas</Nav.Link>
+            <Nav.Link href="#datosDeContacto">Nosotros</Nav.Link>
             <NavDropdown title="Tienda" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Parlantes</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
@@ -28,7 +38,13 @@ function BarraNav() {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">Acerca de</Nav.Link>
+            <Nav.Link href="#acercaDe">Acerca de</Nav.Link>
+            <Nav.Link href="#carrito">
+            <FontAwesomeIcon icon={faCartShopping} 
+            color="rgb(133, 198, 98)"
+            size="2x"  
+          />
+          </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
