@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { Container, Row, Button } from 'react-bootstrap';
 
-function Contador(){
+function Contador({stock}){
     const [num, setNum] = useState(0);
 
     const suma = () => {
-        setNum(num+1)
+        if (num<=(stock-1)) { 
+         setNum(num+1)
+        }
     }
 
     const resta = () => {
