@@ -4,8 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ShopCart from './ShopCart';
 
 function BarraNav() {
   return (
@@ -39,12 +38,7 @@ function BarraNav() {
           </Nav>
           <Nav>
             <Nav.Link href="#acercaDe">Acerca de</Nav.Link>
-            <Nav.Link href="#carrito">
-            <FontAwesomeIcon icon={faCartShopping} 
-            color="rgb(133, 198, 98)"
-            size="2x"  
-          />
-          </Nav.Link>
+            <ShopCart />
           </Nav>
         </Navbar.Collapse>
       </Container>
