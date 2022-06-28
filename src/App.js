@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <BarraNav />
-      <ItemListContainer />
+      <ItemListContainer greetings={"Bienvenidos a nuestra tienda online!"}/>
     </div>
   );
 }
