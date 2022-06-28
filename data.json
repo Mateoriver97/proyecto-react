@@ -1,0 +1,26 @@
+[
+    {
+        "Id": 1,
+        "Title": "Parlante Panacom",
+        "Descr": "Un equipo de tamaño pequeño, de alta fidelidad y calidad. Ideal para pequeñas reuniones.",
+        "Precio": "$3.500",
+        "Img": "parlante1.png",
+        "Stock": "10"
+    },
+    {
+        "Id": 2,
+        "Title": "Parlante Noga",
+        "Descr": "Un equipo de tamaño mediano, de excelente calidad. Ideal para eventos pequeños y medianos.",
+        "Precio": "$7.500",
+        "Img": "parlante2.png",
+        "Stock": "12"
+    },
+    {
+        "Id": 3,
+        "Title": "Parlante Panasonic",
+        "Descr": "Un equipo grande y muy potente, apto para cualquier evento",
+        "Precio": "$15.500",
+        "Img": "parlante3.png",
+        "Stock": "8"
+    }
+]
