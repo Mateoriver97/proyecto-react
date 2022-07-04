@@ -1,6 +1,7 @@
 import React from "react";
 import Contador from "./Contador";
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
+import ItemDetailContainer from "./ItemDetailContainer";
 
 function Item({Title, Descr, Precio, Img, Stock}) {
     return(
@@ -14,11 +15,12 @@ function Item({Title, Descr, Precio, Img, Stock}) {
               />
               <Card.Body>
                 <Card.Title>{Title}</Card.Title>
-                <Card.Text>{Descr}</Card.Text>
                 <Card.Text className="font-dark">{Precio}</Card.Text>
                 <Card.Text className="font-dark">Stock: {Stock} unidades</Card.Text>
                 <Contador stock={Stock}/>
                 <Button variant="primary">Agregar al carrito</Button>
+                <hr />
+                <ItemDetailContainer />
               </Card.Body>
             </Card>
     )

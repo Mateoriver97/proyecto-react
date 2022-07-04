@@ -9,7 +9,6 @@ function ItemList({listadoDeProductos}) {
             <Row className='justify-content-md-center'>
                 {listadoDeProductos.map( (unProducto) => <Item 
                 Title={unProducto.Title}
-                Descr={unProducto.Descr}
                 Precio={unProducto.Precio}
                 Stock={unProducto.Stock}
                 Img={unProducto.Img}
